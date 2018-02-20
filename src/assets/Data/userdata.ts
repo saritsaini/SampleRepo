@@ -1,0 +1,17 @@
+[
+{
+"Name":"rirani",
+"Age":"26",
+"Department":"Account"
+},
+{
+"Name":"Sarit",
+"Age":"30",
+"Department":"Account"
+},
+{
+"Name":"Madan",
+"Age":"35",
+"Department":"Store"
+}
+]

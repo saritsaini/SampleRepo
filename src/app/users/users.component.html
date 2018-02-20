@@ -1,0 +1,18 @@
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>User Name</th>
+        <th>Age</th>
+        <th>Department</th>
+      </tr>
+    </thead>
+    <tbody>
+       <ng-container *ngFor="let user of userdata$ | async">
+      <tr *ngIf="user.Name.toLowerCase().indexOf(filterText?.toLowerCase())>=0 || filterText=='' ||filterText==null " >        
+        <td><a hrf="#" style="cursor:pointer" (click)="GetuserDetails(user)">{{user.Name}}</a></td>
+        <td>{{user.Age}}</td>
+        <td>{{user.Department}}</td>
+      </tr>
+      </ng-container>
+    </tbody>
+  </table>

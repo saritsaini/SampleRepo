@@ -1,0 +1,14 @@
+<table class="table table-bordered" *ngIf="userDetails$ | async as user; else loading">
+    <tbody >
+      <tr>
+        <td>Name</td><td>{{user?.Name}}</td>
+      </tr>
+      <tr>
+        <td>Age</td><td>{{user?.Age}}</td>  
+      </tr>
+        <tr>
+        <td>Department</td><td>{{user?.Department}}</td> 
+        </tr>
+    </tbody>
+  </table>  
+<ng-template #loading>Click User name to get User Details</ng-template>
